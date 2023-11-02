@@ -5,3 +5,11 @@
 # https://www.apachecon.com/event-images/snippet.js
 Redirect /events/current-event.html https://eu.communityovercode.org/
 Redirect /events/current-event https://eu.communityovercode.org/
+
+# test: without leading /events
+Redirect /test1.html https://communityovercode.org/?test1.html
+Redirect /test2 https://communityovercode.org/?test1
+
+# test: with leading events (but no plain file)
+Redirect /events/test2.html https://communityovercode.org/?test2.html
+Redirect /events/test2 https://communityovercode.org/?test2

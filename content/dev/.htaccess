@@ -18,8 +18,9 @@ Redirect 301 /dev/apply-license.html /legal/apply-license.html
 # Another try; let local host add .html
 Redirect /dev/asfbot.html https://infra.apache.org/asfbot.html
 
-Redirect /dev/committers      https://infra.apache.org/committers.html
-Redirect /dev/committers.html https://infra.apache.org/committers.html
+# TEST: drop /dev
+Redirect /committers      https://infra.apache.org/committers.html
+Redirect /committers.html https://infra.apache.org/committers.html
 
 Redirect /dev/contrib-email-tips      https://infra.apache.org/contrib-email-tips.html
 Redirect /dev/contrib-email-tips.html https://infra.apache.org/contrib-email-tips.html
